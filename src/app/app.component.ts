@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'first-app';
+  nombre: string = '';
+  correo: string = '';
+
+  onSubmit() {
+    console.log('Nombre:', this.nombre);
+    console.log('Correo:', this.correo);
+  }
 }
